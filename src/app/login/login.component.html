@@ -1,9 +1,12 @@
-<h1 style="text-align:center">
-    Bloger Login Example
-  </h1>
+<div  class="card">
+  <div fxlayout="column" style="background: #ffba32;">
+    <img src="../../assets/img/Capture1.PNG" alt="" />
+  </div>
+
+ <div class="card-container">
   <div class="login">
-    <h2 class="login-header">Log in</h2>
-    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+    <h2 class="header">Login to continue</h2>
+    <form [formGroup]="loginForm" class="container" (ngSubmit)="login()">
   
       <dev [ngClass]="{ 'has-error': isSubmitted && formControls['email'].errors }">
         <input type="email" placeholder="Email" formControlName="email">
@@ -26,3 +29,88 @@
       </p>
     </form>
   </div>
+ </div>
+</div>
+<!-- <div class="login">
+    <h2 class="header">Login to continue</h2>
+    <form [formGroup]="loginForm" class="container" (ngSubmit)="login()">
+  
+      <dev [ngClass]="{ 'has-error': isSubmitted && formControls['email'].errors }">
+        <input type="email" placeholder="Email" formControlName="email">
+      </dev>
+  
+      <div *ngIf="isSubmitted && formControls['email'].errors" class="help-block">
+        <div *ngIf="formControls['email'].errors['required']">Email is required</div>
+      </div>
+  
+      <dev [ngClass]="{ 'has-error': isSubmitted && formControls['password'].errors }">
+        <input type="password" placeholder="Password" formControlName="password">
+      </dev>
+  
+      <div *ngIf="isSubmitted && formControls['password'].errors" class="help-block">
+        <div *ngIf="formControls['password'].errors['required']">Password is required</div>
+      </div>
+  
+      <p>
+        <input type="submit" value="Log in">
+      </p>
+    </form>
+  </div> -->
+
+<!--   
+  <div class="login-wrap">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="login-html">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+      <div class="login-form">
+        <div class="sign-in-htm">
+          <div class="group">
+            <label for="user" class="label">Email</label>
+            <input id="user" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <input id="check" type="checkbox" class="check" checked>
+            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+          </div>
+          <div class="group">
+            <input type="submit" class="button" value="Sign In">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <a href="#forgot">Forgot Password?</a>
+          </div>
+        </div>
+        <!-- <div class="sign-up-htm">
+          <div class="group">
+            <label for="user" class="label">Username</label>
+            <input id="user" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Repeat Password</label>
+            <input id="pass" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Email Address</label>
+            <input id="pass" type="text" class="input">
+          </div>
+          <div class="group">
+            <input type="submit" class="button" value="Sign Up">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <label for="tab-1">Already Member?</label>
+          </div>
+        </div> -->
+<!-- </div>
+    </div>
+  </form>
+  </div> -->
