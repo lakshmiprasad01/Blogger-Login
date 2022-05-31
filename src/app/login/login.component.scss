@@ -2,6 +2,9 @@
 body {
   background: #456;
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* 'Open Sans' font from Google Fonts */
@@ -34,9 +37,9 @@ body {
   padding: 12px;
 }
 
-.login p {
-  padding: 12px;
-}
+// .login p {
+//   padding: 12px;
+// }
 
 .login input {
   box-sizing: border-box;
@@ -56,6 +59,7 @@ body {
   background: #fff;
   border-color: #bbb;
   color: #555;
+  border-radius: 23px;
 }
 
 .login input[type="email"]:focus,
@@ -79,13 +83,13 @@ body {
 }
 .has-error input[type="email"],
 .has-error input[type="password"] {
-    border-color: rgb(216, 12, 12) !important;
-    color: rgb(230, 14, 14) !important;
+  border-color: rgb(216, 12, 12) !important;
+  color: rgb(230, 14, 14) !important;
 }
-.help-block{
+.help-block {
   position: relative;
-    top: -17px;
-    color: red;
+  top: -17px;
+  color: red;
 }
 //
 
